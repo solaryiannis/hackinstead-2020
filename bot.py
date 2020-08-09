@@ -196,7 +196,7 @@ async def userinfo(ctx, *, name = ""):
     uncoolctxtime = uncoolzone.localize(vuncoolctxtime)
     coolctxtime = uncoolctxtime.astimezone(coolzone)
 
-    colour = role.colour
+    colour = member.colour
     colourString = str(colour)
     if colourString == "#000000":
         colour = 0x99aab5
